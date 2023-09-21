@@ -38,8 +38,6 @@ const AnimatedNumbers = ({ value, classname }) => {
 };
 
 const about = () => {
-  const { scrollYProgress } = useScroll();
-
   return (
     <>
       <Head>

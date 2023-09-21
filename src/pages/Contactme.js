@@ -9,6 +9,9 @@ import Script from "next/script";
 const Contact = () => {
   return (
     <>
+      <Script id="myscript" type="text/javascript">
+        (function(){emailjs.init("OB3dCdbywCOfijMGb")})();
+      </Script>
       <Head>
         <title>About</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,9 +19,6 @@ const Contact = () => {
           type="text/javascript"
           src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
         ></script> */}
-        <Script type="text/javascript">
-          (function(){emailjs.init("OB3dCdbywCOfijMGb")})();
-        </Script>
       </Head>
       <Transitionku />
       <main>
