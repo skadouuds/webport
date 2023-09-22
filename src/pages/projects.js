@@ -146,7 +146,7 @@ const project = () => {
               </Link>
             </div>
             <div className="flex justify-center mt-8 rounded">
-              <Link href="#" target="_blank">
+              <Link href="/" target="_blank">
                 <motion.div
                   whileHover="hover" // Apply the hover animation on hover
                   variants={imageVariants} // Use the defined variants
