@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full px-5 sm:px-8 py-4 md:py-6 lg:px-16 xl:px-32 font-medium flex justify-center items-center">
+    <header className="w-full px-5 sm:px-8 py-4 md:py-6 lg:px-16 xl:px-32 font-medium flex  md:justify-center items-center">
       {/* Responsive Min MD */}
       <button
         onClick={handleToggle}
@@ -86,10 +86,18 @@ const Navbar = () => {
             <CustomLink href="/Contactme" titles={["Contact"]} />
           </li>
           <li className=" inline-grid grid-cols-4 gap-5 w-44 justify-center mt-5">
-            <FacebookIcon />
-            <LinkedInIcon />
-            <GithubIcon />
-            <InstaIcon />
+            <a href="https://www.facebook.com/vincent.ghanz" target="_blank">
+              <FacebookIcon />
+            </a>
+            <a href="https://www.linkedin.com/in/vincentghanz/" target="_blank">
+              <LinkedInIcon />
+            </a>
+            <a href="https://github.com/skadouuds" target="_blank">
+              <GithubIcon />
+            </a>
+            <a href="https://www.instagram.com/vincentleonn2/" target="_blank">
+              <InstaIcon />
+            </a>
           </li>
         </ul>
       </div>

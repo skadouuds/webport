@@ -46,10 +46,17 @@ const Contactsku = () => {
         <h3 className="font-bold text-xl mb-2 w-full text-left mt-28">
           Get in touch with me!!
         </h3>
-        <p>Currently.</p>
+
         <div className="grid grid-cols-3">
           <div className="col-span-2">
-            <h1>Contact Me</h1>
+            <h1 className=" italic font-medium mb-4">
+              I am currently available and interested in exploring exciting
+              opportunities related to my expertise in the Future. Feel free to
+              contact me or connect with me on social media.
+              <br />
+              <br />
+              My Email : Vincentghanz@gmail.com
+            </h1>
             <form onSubmit={sendEmail} ref={form}>
               <div className="mb-4">
                 <h5 htmlFor="name">Name</h5>
