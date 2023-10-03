@@ -1,9 +1,6 @@
 import React from "react";
-import Layout from "@/components/layout";
-import Head from "next/head";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import { LinkedInIcon, GithubIcon, InstaIcon, FacebookIcon } from "./icons";
 import { Contactsini } from "./icons";
 import { motion } from "framer-motion";
 import swal from "sweetalert";
@@ -19,16 +16,15 @@ const Contactsku = () => {
       mail: document.getElementById("mail").value,
       msg: document.getElementById("msg").value,
     };
-
     emailjs.send("service_9ga4boi", "template_tuem34o", varparams).then(
       (result) => {
         swal("Your message sent successfully!!", {
           buttons: false,
           timer: 1000,
-          className: "overlay text",
+          className: "overlay",
         });
+        // form.current.reset();
         console.log(result.text);
-        form.current.reset();
       },
       (error) => {
         swal("Failed to sent the message!!", {
@@ -57,7 +53,7 @@ const Contactsku = () => {
               <br />
               My Email : Vincentghanz@gmail.com
             </h1>
-            <form onSubmit={sendEmail} ref={form}>
+            <form onSubmit={sendEmail} ref={form} id="myForm">
               <div className="mb-4">
                 <h5 htmlFor="name">Name</h5>
                 <input

@@ -15,10 +15,6 @@ const Contact = () => {
       <Head>
         <title>About</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* <script
-          type="text/javascript"
-          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-        ></script> */}
       </Head>
       <Transitionku />
       <main>
