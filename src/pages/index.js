@@ -44,7 +44,7 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row items-center self-start mt-4">
                 <Link
-                  href="/dummy.pdf"
+                  href="/Vincent Leon Ghanz.pdf"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark transition duration-300 ease-in-out mb-2 sm:mb-0 sm:mr-4"
                   download={true}
                 >
